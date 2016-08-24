@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity">
+    <item
+        android:id="@+id/action_adicionar"
+        android:orderInCategory="100"
+        android:title="Adicionar tomada"
+        android:icon="@drawable/adicionar"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_desconectar"
+        android:orderInCategory="100"
+        android:icon="@drawable/sair"
+        android:title="Desconectar"
+        app:showAsAction="never" />
+</menu>

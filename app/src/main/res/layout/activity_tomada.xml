@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollViewTomada">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Alterar status da Tomada"
+                android:gravity="center"/>
+
+            <Switch
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Status da Tomada"
+                android:textColor="@color/colorAccent"
+                android:layout_gravity="center"
+                android:id="@+id/switchTomada" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray_unselected"
+                android:layout_height="3dp"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Programação"
+                android:gravity="center"
+                />
+
+            <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/programarData"
+            android:text="Programar tomada"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:backgroundTint="@color/vermelho_botao"
+            android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:id="@+id/data_hora"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirm_program"
+                android:text="Enviar Programação"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:backgroundTint="@color/vermelho_botao"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/remove_program"
+                android:text="Remover Programação"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:backgroundTint="@color/vermelho_botao"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
